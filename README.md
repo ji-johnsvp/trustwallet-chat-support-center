@@ -57,6 +57,7 @@ const ChatInterface = () => {
             key={msg.id}
             className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
           >
+           
             <div className={`max-w-xs lg:max-w-md px-4 py-2 rounded-lg ${
               msg.sender === 'user' 
                 ? 'bg-blue-600 text-white' 
@@ -90,6 +91,7 @@ const ChatInterface = () => {
             onClick={handleSendMessage}
             className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-lg transition-colors"
           >
+          
             <Send size={20} />
           </button>
         </div>
@@ -181,6 +183,7 @@ const Header = () => {
                 href="#"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
               >
+              
                 {item}
               </a>
             ))}
